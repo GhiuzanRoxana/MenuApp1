@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="MenuApp.Views.ContactView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenuApp.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Border Background="White" Opacity="0.9" CornerRadius="10" Margin="20">
+            <ScrollViewer Margin="20">
+                <StackPanel>
+                    <TextBlock Text="Contact" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+
+                    <Grid Margin="0,0,0,20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Adresă:" FontWeight="Bold" Margin="0,0,10,5"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text=" Roman" Margin="0,0,0,5"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Telefon:" FontWeight="Bold" Margin="0,0,10,5"/>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="0745 123 456" Margin="0,0,0,5"/>
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Email:" FontWeight="Bold" Margin="0,0,10,5"/>
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="contact@steauademare.ro" Margin="0,0,0,5"/>
+
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Program:" FontWeight="Bold" Margin="0,0,10,5"/>
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="Luni - Duminică: 10:00 - 22:00" Margin="0,0,0,5"/>
+                    </Grid>
+
+                    <TextBlock Text="Formular de contact" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Nume:" Margin="0,0,0,5"/>
+                        <TextBox Padding="5" FontSize="14"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Email:" Margin="0,0,0,5"/>
+                        <TextBox Padding="5" FontSize="14"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Mesaj:" Margin="0,0,0,5"/>
+                        <TextBox Padding="5" FontSize="14" Height="100" TextWrapping="Wrap" AcceptsReturn="True"/>
+                    </StackPanel>
+
+                    <Button Content="Trimite" Padding="15,8" Background="#0078D7" Foreground="White" 
+                            BorderThickness="0" FontSize="14" Width="100" HorizontalAlignment="Left"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>
